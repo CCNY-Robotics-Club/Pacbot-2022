@@ -1,2 +1,5 @@
+neat-python==0.92
 protobuf==3.19.1
 pygame==2.1.0
+pyserial==3.5
+six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work

@@ -22,19 +22,8 @@ POWER_PELLET_WEIGHT = 0.15
 GHOST_WEIGHT = 0.30
 FRIGHTENED_GHOST_WEIGHT = GHOST_WEIGHT**2
 
-
-# while(i<len(path)):
-#     print(path[i][-1])
-#     i+=1
-
-
-
-
-
-SPEED = 1.0
+SPEED = 1
 FREQUENCY = SPEED * game_frequency 
-
-
 
 class HighLevel(rm.ProtoModule):
     def __init__(self, addr, port):
@@ -276,7 +265,7 @@ class HighLevel(rm.ProtoModule):
         self.printNicely()
         x = self.pacbot_pos[0]
         y = self.pacbot_pos[1]
-        if(self.cherry and self.ManhattanDist((x,y), (13,13))<float("13")):
+        if (self.cherry and self.ManhattanDist((x,y), (13,13))<float("13")):
             path = copy.deepcopy(bfs(self.grid, (self.cur_dir,x,y), (13,13)))
             next_loc = (path[0][1],path[0][2])
             dir = self.get_direction(next_loc, (x,y))

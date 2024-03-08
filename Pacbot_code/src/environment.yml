@@ -24,4 +24,8 @@ dependencies:
   - zlib=1.2.11
   - pip:
     - pygame==2.1.0
+    # Added by Mon
+    - neat-python==0.92
+    - protobuf==3.19.1
+    - pyserial==3.5
 prefix: /Users/Tom/anaconda3/envs/PacBot
